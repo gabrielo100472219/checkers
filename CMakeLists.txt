@@ -3,4 +3,5 @@ project(checkers)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled main.cpp)
+add_executable(checkers app/main.cpp
+        tests/gtests_main.cpp)
