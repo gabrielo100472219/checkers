@@ -368,15 +368,6 @@ checkers_IS_TOP_LEVEL:STATIC=ON
 checkers_SOURCE_DIR:STATIC=C:/Users/Gabriel Ortega/CLionProjects/checkers
 
 //Value Computed by CMake
-fluid_BINARY_DIR:STATIC=C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug
-
-//Value Computed by CMake
-fluid_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-fluid_SOURCE_DIR:STATIC=C:/Users/Gabriel Ortega/CLionProjects/checkers
-
-//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-build/googlemock
 
 //Value Computed by CMake

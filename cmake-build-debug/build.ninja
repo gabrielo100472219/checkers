@@ -41,38 +41,45 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target checkers.exe
+# Object build statements for EXECUTABLE target checkers
 
 
 #############################################
-# Order-only phony target for checkers.exe
+# Order-only phony target for checkers
 
-build cmake_object_order_depends_target_checkers.exe: phony || CMakeFiles/checkers.exe.dir
+build cmake_object_order_depends_target_checkers: phony || CMakeFiles/checkers.dir
 
-build CMakeFiles/checkers.exe.dir/app/main.cpp.obj: CXX_COMPILER__checkers.2eexe_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/main.cpp || cmake_object_order_depends_target_checkers.exe
-  DEP_FILE = CMakeFiles\checkers.exe.dir\app\main.cpp.obj.d
+build CMakeFiles/checkers.dir/app/main.cpp.obj: CXX_COMPILER__checkers_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/main.cpp || cmake_object_order_depends_target_checkers
+  DEP_FILE = CMakeFiles\checkers.dir\app\main.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
   INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/."
-  OBJECT_DIR = CMakeFiles\checkers.exe.dir
-  OBJECT_FILE_DIR = CMakeFiles\checkers.exe.dir\app
+  OBJECT_DIR = CMakeFiles\checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles\checkers.dir\app
+
+build CMakeFiles/checkers.dir/app/piece.cpp.obj: CXX_COMPILER__checkers_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/piece.cpp || cmake_object_order_depends_target_checkers
+  DEP_FILE = CMakeFiles\checkers.dir\app\piece.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/."
+  OBJECT_DIR = CMakeFiles\checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles\checkers.dir\app
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target checkers.exe
+# Link build statements for EXECUTABLE target checkers
 
 
 #############################################
-# Link the executable checkers.exe.exe
+# Link the executable checkers.exe
 
-build checkers.exe.exe: CXX_EXECUTABLE_LINKER__checkers.2eexe_Debug CMakeFiles/checkers.exe.dir/app/main.cpp.obj
+build checkers.exe: CXX_EXECUTABLE_LINKER__checkers_Debug CMakeFiles/checkers.dir/app/main.cpp.obj CMakeFiles/checkers.dir/app/piece.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\checkers.exe.dir
+  OBJECT_DIR = CMakeFiles\checkers.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = checkers.exe.exe
-  TARGET_IMPLIB = libcheckers.exe.dll.a
-  TARGET_PDB = checkers.exe.exe.dbg
+  TARGET_FILE = checkers.exe
+  TARGET_IMPLIB = libcheckers.dll.a
+  TARGET_PDB = checkers.exe.dbg
 
 
 #############################################
@@ -777,79 +784,132 @@ build app/install/strip: phony app/CMakeFiles/install/strip.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target checkers_test.exe
+# Object build statements for EXECUTABLE target checkers_test
 
 
 #############################################
-# Order-only phony target for checkers_test.exe
+# Order-only phony target for checkers_test
 
-build cmake_object_order_depends_target_checkers_test.exe: phony || tests/CMakeFiles/checkers_test.exe.dir
+build cmake_object_order_depends_target_checkers_test: phony || cmake_object_order_depends_target_checkers_lib
 
-build tests/CMakeFiles/checkers_test.exe.dir/__/app/board.cpp.obj: CXX_COMPILER__checkers_test.2eexe_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/board.cpp || cmake_object_order_depends_target_checkers_test.exe
-  DEP_FILE = tests\CMakeFiles\checkers_test.exe.dir\__\app\board.cpp.obj.d
+build tests/CMakeFiles/checkers_test.dir/__/app/board.cpp.obj: CXX_COMPILER__checkers_test_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/board.cpp || cmake_object_order_depends_target_checkers_test
+  DEP_FILE = tests\CMakeFiles\checkers_test.dir\__\app\board.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
   INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app"
-  OBJECT_DIR = tests\CMakeFiles\checkers_test.exe.dir
-  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_test.exe.dir\__\app
+  OBJECT_DIR = tests\CMakeFiles\checkers_test.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_test.dir\__\app
+
+build tests/CMakeFiles/checkers_test.dir/__/app/piece.cpp.obj: CXX_COMPILER__checkers_test_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/piece.cpp || cmake_object_order_depends_target_checkers_test
+  DEP_FILE = tests\CMakeFiles\checkers_test.dir\__\app\piece.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app"
+  OBJECT_DIR = tests\CMakeFiles\checkers_test.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_test.dir\__\app
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target checkers_test.exe
+# Link build statements for EXECUTABLE target checkers_test
 
 
 #############################################
-# Link the executable tests\checkers_test.exe.exe
+# Link the executable tests\checkers_test.exe
 
-build tests/checkers_test.exe.exe: CXX_EXECUTABLE_LINKER__checkers_test.2eexe_Debug tests/CMakeFiles/checkers_test.exe.dir/__/app/board.cpp.obj
+build tests/checkers_test.exe: CXX_EXECUTABLE_LINKER__checkers_test_Debug tests/CMakeFiles/checkers_test.dir/__/app/board.cpp.obj tests/CMakeFiles/checkers_test.dir/__/app/piece.cpp.obj | tests/libcheckers_lib.a tests/libcheckers_lib.a || tests/libcheckers_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = tests\CMakeFiles\checkers_test.exe.dir
+  LINK_LIBRARIES = tests/libcheckers_lib.a  tests/libcheckers_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\checkers_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = tests\checkers_test.exe.exe
-  TARGET_IMPLIB = tests\libcheckers_test.exe.dll.a
-  TARGET_PDB = checkers_test.exe.exe.dbg
+  TARGET_FILE = tests\checkers_test.exe
+  TARGET_IMPLIB = tests\libcheckers_test.dll.a
+  TARGET_PDB = checkers_test.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target tests.exe
+# Object build statements for STATIC_LIBRARY target checkers_lib
 
 
 #############################################
-# Order-only phony target for tests.exe
+# Order-only phony target for checkers_lib
 
-build cmake_object_order_depends_target_tests.exe: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_checkers_lib: phony || tests/CMakeFiles/checkers_lib.dir
 
-build tests/CMakeFiles/tests.exe.dir/gtests_main.cpp.obj: CXX_COMPILER__tests.2eexe_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/tests/gtests_main.cpp || cmake_object_order_depends_target_tests.exe
-  DEP_FILE = tests\CMakeFiles\tests.exe.dir\gtests_main.cpp.obj.d
+build tests/CMakeFiles/checkers_lib.dir/__/app/board.cpp.obj: CXX_COMPILER__checkers_lib_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/board.cpp || cmake_object_order_depends_target_checkers_lib
+  DEP_FILE = tests\CMakeFiles\checkers_lib.dir\__\app\board.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
-  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/gsl-src/include"
-  OBJECT_DIR = tests\CMakeFiles\tests.exe.dir
-  OBJECT_FILE_DIR = tests\CMakeFiles\tests.exe.dir
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app"
+  OBJECT_DIR = tests\CMakeFiles\checkers_lib.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_lib.dir\__\app
 
-build tests/CMakeFiles/tests.exe.dir/gtests_board.cpp.obj: CXX_COMPILER__tests.2eexe_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/tests/gtests_board.cpp || cmake_object_order_depends_target_tests.exe
-  DEP_FILE = tests\CMakeFiles\tests.exe.dir\gtests_board.cpp.obj.d
+build tests/CMakeFiles/checkers_lib.dir/__/app/piece.cpp.obj: CXX_COMPILER__checkers_lib_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/piece.cpp || cmake_object_order_depends_target_checkers_lib
+  DEP_FILE = tests\CMakeFiles\checkers_lib.dir\__\app\piece.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
-  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/gsl-src/include"
-  OBJECT_DIR = tests\CMakeFiles\tests.exe.dir
-  OBJECT_FILE_DIR = tests\CMakeFiles\tests.exe.dir
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app"
+  OBJECT_DIR = tests\CMakeFiles\checkers_lib.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_lib.dir\__\app
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tests.exe
+# Link build statements for STATIC_LIBRARY target checkers_lib
 
 
 #############################################
-# Link the executable tests\tests.exe.exe
+# Link the static library tests\libcheckers_lib.a
 
-build tests/tests.exe.exe: CXX_EXECUTABLE_LINKER__tests.2eexe_Debug tests/CMakeFiles/tests.exe.dir/gtests_main.cpp.obj tests/CMakeFiles/tests.exe.dir/gtests_board.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = tests\CMakeFiles\tests.exe.dir
+build tests/libcheckers_lib.a: CXX_STATIC_LIBRARY_LINKER__checkers_lib_Debug tests/CMakeFiles/checkers_lib.dir/__/app/board.cpp.obj tests/CMakeFiles/checkers_lib.dir/__/app/piece.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = tests\CMakeFiles\checkers_lib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = tests\tests.exe.exe
-  TARGET_IMPLIB = tests\libtests.exe.dll.a
-  TARGET_PDB = tests.exe.exe.dbg
+  TARGET_FILE = tests\libcheckers_lib.a
+  TARGET_PDB = checkers_lib.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tests
+
+
+#############################################
+# Order-only phony target for tests
+
+build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_checkers_lib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build tests/CMakeFiles/tests.dir/gtests_main.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/tests/gtests_main.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = tests\CMakeFiles\tests.dir\gtests_main.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/gsl-src/include"
+  OBJECT_DIR = tests\CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\tests.dir
+
+build tests/CMakeFiles/tests.dir/gtests_board.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/tests/gtests_board.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = tests\CMakeFiles\tests.dir\gtests_board.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/gsl-src/include"
+  OBJECT_DIR = tests\CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\tests.dir
+
+build tests/CMakeFiles/tests.dir/gtests_piece.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/tests/gtests_piece.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = tests\CMakeFiles\tests.dir\gtests_piece.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/googletest-src/googletest" -isystem "C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/_deps/gsl-src/include"
+  OBJECT_DIR = tests\CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\tests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tests
+
+
+#############################################
+# Link the executable tests\tests.exe
+
+build tests/tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug tests/CMakeFiles/tests.dir/gtests_main.cpp.obj tests/CMakeFiles/tests.dir/gtests_board.cpp.obj tests/CMakeFiles/tests.dir/gtests_piece.cpp.obj | lib/libgtest.a lib/libgtest_main.a tests/libcheckers_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a tests/libcheckers_lib.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  tests/libcheckers_lib.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\tests.exe
+  TARGET_IMPLIB = tests\libtests.dll.a
+  TARGET_PDB = tests.exe.dbg
 
 
 #############################################
@@ -931,11 +991,13 @@ build tests/install/strip: phony tests/CMakeFiles/install/strip.util
 # =============================================================================
 # Target aliases.
 
-build checkers.exe: phony checkers.exe.exe
+build checkers: phony checkers.exe
 
-build checkers_test.exe: phony tests/checkers_test.exe.exe
+build checkers_lib: phony tests/libcheckers_lib.a
 
-build checkers_test.exe.exe: phony tests/checkers_test.exe.exe
+build checkers_test: phony tests/checkers_test.exe
+
+build checkers_test.exe: phony tests/checkers_test.exe
 
 build gmock: phony lib/libgmock.a
 
@@ -945,6 +1007,8 @@ build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
 
+build libcheckers_lib.a: phony tests/libcheckers_lib.a
+
 build libgmock.a: phony lib/libgmock.a
 
 build libgmock_main.a: phony lib/libgmock_main.a
@@ -953,9 +1017,9 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build tests.exe: phony tests/tests.exe.exe
+build tests: phony tests/tests.exe
 
-build tests.exe.exe: phony tests/tests.exe.exe
+build tests.exe: phony tests/tests.exe
 
 # =============================================================================
 # Folder targets.
@@ -965,7 +1029,7 @@ build tests.exe.exe: phony tests/tests.exe.exe
 #############################################
 # Folder: C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug
 
-build all: phony checkers.exe.exe _deps/googletest-build/all _deps/gsl-build/all app/all tests/all
+build all: phony checkers.exe _deps/googletest-build/all _deps/gsl-build/all app/all tests/all
 
 # =============================================================================
 
@@ -1014,7 +1078,7 @@ build app/all: phony
 #############################################
 # Folder: C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests
 
-build tests/all: phony tests/checkers_test.exe.exe tests/tests.exe.exe
+build tests/all: phony tests/checkers_test.exe tests/libcheckers_lib.a tests/tests.exe
 
 # =============================================================================
 # Built-in targets

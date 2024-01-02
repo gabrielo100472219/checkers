@@ -34,6 +34,8 @@ add_subdirectory(tests)
 # Unit tests and functional tests
 enable_testing()
 
-add_executable(checkers.exe
+add_executable(checkers
         app/main.cpp
+        app/piece.hpp
+        app/piece.cpp
 )

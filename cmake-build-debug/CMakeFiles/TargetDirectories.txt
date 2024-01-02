@@ -1,4 +1,4 @@
-C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/CMakeFiles/checkers.exe.dir
+C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/CMakeFiles/checkers.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/CMakeFiles/test.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
@@ -52,8 +52,9 @@ C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/app/CMakeFiles/
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/app/CMakeFiles/install.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/app/CMakeFiles/install/local.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/app/CMakeFiles/install/strip.dir
-C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/checkers_test.exe.dir
-C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/tests.exe.dir
+C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/checkers_test.dir
+C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/checkers_lib.dir
+C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/tests.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/test.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
 C:/Users/Gabriel Ortega/CLionProjects/checkers/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir
