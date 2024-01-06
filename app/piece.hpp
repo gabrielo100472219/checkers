@@ -5,16 +5,22 @@
 #include <array>
 using namespace std;
 
+
+struct Position {
+  int x;
+  int y;
+};
+
 class Piece {
 public:
-  array<int, 2> position; // x, y
+  Position position;
   string color; // black or white
+  array<Position, 2> possible_moves;
 
   // Function for moving a piece given the two directions in which it will move
   int move(const string& vertical_dir, const string& horizontal_dir);
 
-  // Function for checking if the position of a piece is valid
-  int check_valid_position();
+
 
 };
 

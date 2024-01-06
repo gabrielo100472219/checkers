@@ -35,3 +35,26 @@ void Board::setup_black() {
     }
   }
 }
+
+int Board::check_valid_position(Position position_to_check) {
+  // We first check if the current position is in bounds
+  if (position_to_check.x < 0 or position_to_check.y < 0 or position_to_check.x >= 8 or position_to_check.y >= 8){
+    return -1;
+  }
+
+  // We now check if the position is a white box
+  // If y is pair, the piece must be in an pair x
+  if (position_to_check.y%2 == 0){
+    if (position_to_check.x%2 == 1){
+      return -2;
+    }
+  }else{
+    // If y is odd, x must be odd
+    if (position_to_check.x%2 == 0){
+      return -3;
+    }
+  }
+  return 0;
+}
+
+

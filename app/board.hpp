@@ -22,6 +22,9 @@ class Board {
   // Function for creating all black pieces with correct positions
   void setup_black();
 
+  // Function for checking if the position of a piece is valid
+  static int check_valid_position(Position position_to_check);
+
 
 
 };
