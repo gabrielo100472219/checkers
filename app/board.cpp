@@ -12,7 +12,6 @@ void Board::setup_white() {
   }
 }
 
-
 void Board::create_initial_black_pieces() {
   // Now we do the same for the black pieces, going from
   for (int y=5; y<MAX_BOARD_SIZE; y++){
@@ -72,7 +71,6 @@ bool Board::position_is_white_box(const Position &position_to_check) {
 }
 
 bool Board::position_is_out_of_bounds(const Position &position_to_check) {
-  return position_to_check.x < 0 or position_to_check.y < 0 or position_to_check.x >= MAX_BOARD_SIZE or position_to_check.y >= MAX_BOARD_SIZE;
+  return position_to_check.x < 0 or position_to_check.y < 0 or position_to_check.x >= MAX_BOARD_SIZE or
+  position_to_check.y >= MAX_BOARD_SIZE;
 }
-
-

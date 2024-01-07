@@ -58,3 +58,38 @@ TEST(GTestBoard, test_white_box_position_pair_y) {
   EXPECT_EQ(test_board.check_valid_position(position_to_check), -2);
 }
 
+TEST(GTestBoard, test_white_2_possible_moves) {
+  Board test_board;
+  test_board.create_white_piece({4, 2});
+  test_board.white_pieces[0].calculate_possible_moves();
+  int number_of_possible_moves = int(test_board.white_pieces[0].possible_moves.size());
+  Position destination1 = test_board.white_pieces[0].possible_moves[0];
+  Position destination2 = test_board.white_pieces[0].possible_moves[1];
+  EXPECT_EQ(number_of_possible_moves, 2);
+  EXPECT_EQ(destination1.x, 3);
+  EXPECT_EQ(destination1.y, 3);
+  EXPECT_EQ(destination2.x, 5);
+  EXPECT_EQ(destination2.x, 3);
+}
+
+TEST(GTestBoard, test_white_possible_move_left_from_wall) {
+  Board test_board;
+  test_board.create_white_piece({7, 1});
+  test_board.white_pieces[0].calculate_possible_moves();
+  int number_of_possible_moves = int(test_board.white_pieces[0].possible_moves.size());
+  Position destination = test_board.white_pieces[0].possible_moves[0];
+  EXPECT_EQ(number_of_possible_moves, 1);
+  EXPECT_EQ(destination.x, 6);
+  EXPECT_EQ(destination.y, 2);
+}
+
+TEST(GTestBoard, test_white_possible_move_right_from_wall) {
+  Board test_board;
+  test_board.create_white_piece({0, 2});
+  test_board.white_pieces[0].calculate_possible_moves();
+  int number_of_possible_moves = int(test_board.white_pieces[0].possible_moves.size());
+  Position destination = test_board.white_pieces[0].possible_moves[0];
+  EXPECT_EQ(number_of_possible_moves, 1);
+  EXPECT_EQ(destination.x, 1);
+  EXPECT_EQ(destination.y, 3);
+}
