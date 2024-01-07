@@ -49,7 +49,7 @@ TEST(GTestsBoard, test_out_of_bounds_y_position){
 TEST(GTestBoard, test_white_box_position_odd_y) {
   Board test_board;
   Position position_to_check = {0, 1};
-  EXPECT_EQ(test_board.check_valid_position(position_to_check), -3);
+  EXPECT_EQ(test_board.check_valid_position(position_to_check), -2);
 }
 
 TEST(GTestBoard, test_white_box_position_pair_y) {

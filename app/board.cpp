@@ -1,60 +1,78 @@
 #include "board.hpp"
 
+
 void Board::setup_white() {
   // We create the white pieces and put them in their corresponding positions
   for (int y=0; y<3; y++){
-    // Depending on the y position, whe start by cells 0 or 1
-    int x = 0;
-    if (y == 1){
-      x += 1;
-    }
+    int x = get_starting_x_from_y(y);
     // We add all white pieces to the white list
-    for (; x<8; x+=2){
-      Piece white;
-      white.color = "white"; // Color is white obviously
-      white.position = {x, y}; // Position is the one corresponding with the loop's logic
-      this->white_pieces.push_back(white);
+    for (; x<MAX_BOARD_SIZE; x+=2){
+      create_white_piece({x, y});
     }
   }
 }
 
-void Board::setup_black() {
+
+void Board::create_initial_black_pieces() {
   // Now we do the same for the black pieces, going from
-  for (int y=5; y<8; y++){
-    // Depending on the y position, whe start by cells 0 or 1
-    int x = 1;
-    if (y == 6){
-      x -= 1;
-    }
+  for (int y=5; y<MAX_BOARD_SIZE; y++){
+    int x = get_starting_x_from_y(y);
     // We add all black pieces to the white list
-    for (; x<8; x+=2){
-      Piece black;
-      black.color = "black"; // Color is black obviously
-      black.position = {x, y}; // Position is the one corresponding with the loop's logic
-      this->black_pieces.push_back(black);
+    for (; x<MAX_BOARD_SIZE; x+=2){
+      create_black_piece({x, y});
     }
   }
+}
+
+int Board::get_starting_x_from_y(int y) {
+  // Depending on the y position, whe start by cells 0 or 1
+  int x = 0;
+  if (y%2 == 1){
+    x = 1;
+  }
+  return x;
+}
+
+void Board::create_white_piece(Position piece_position) {
+  Piece white;
+  white.color = "white"; // Color is white obviously
+  white.position = piece_position; // Position is the one corresponding with the loop's logic
+  white_pieces.push_back(white);
+}
+
+void Board::create_black_piece(Position piece_position) {
+  Piece black;
+  black.color = "black"; // Color is black obviously
+  black.position = piece_position; // Position is the one corresponding with the loop's logic
+  black_pieces.push_back(black);
 }
 
 int Board::check_valid_position(Position position_to_check) {
-  // We first check if the current position is in bounds
-  if (position_to_check.x < 0 or position_to_check.y < 0 or position_to_check.x >= 8 or position_to_check.y >= 8){
+  if (position_is_out_of_bounds(position_to_check)){
     return -1;
   }
+  if (position_is_white_box(position_to_check)){
+    return -2;
+  }
+  return 0;
+}
 
-  // We now check if the position is a white box
-  // If y is pair, the piece must be in an pair x
-  if (position_to_check.y%2 == 0){
-    if (position_to_check.x%2 == 1){
-      return -2;
+bool Board::position_is_white_box(const Position &position_to_check) {
+  if (position_to_check.y % 2 == 0){
+    if (position_to_check.x % 2 == 1){
+      return true;
     }
   }else{
     // If y is odd, x must be odd
-    if (position_to_check.x%2 == 0){
-      return -3;
+    if (position_to_check.x % 2 == 0){
+      return true;
     }
   }
-  return 0;
+  return false;
+}
+
+bool Board::position_is_out_of_bounds(const Position &position_to_check) {
+  return position_to_check.x < 0 or position_to_check.y < 0 or position_to_check.x >= MAX_BOARD_SIZE or position_to_check.y >= MAX_BOARD_SIZE;
 }
 
 
