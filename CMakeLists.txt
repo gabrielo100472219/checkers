@@ -38,4 +38,9 @@ add_executable(checkers
         app/main.cpp
         app/piece.hpp
         app/piece.cpp
+        app/position_validator.hpp
+        app/position_validator.cpp
+        app/checkers_commons.hpp
+        app/position.cpp
+        app/position.hpp
 )
