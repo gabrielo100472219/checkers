@@ -41,6 +41,4 @@ add_executable(checkers
         app/position_validator.hpp
         app/position_validator.cpp
         app/checkers_commons.hpp
-        app/position.cpp
-        app/position.hpp
 )

@@ -70,13 +70,6 @@ build CMakeFiles/checkers.dir/app/position_validator.cpp.obj: CXX_COMPILER__chec
   OBJECT_DIR = CMakeFiles\checkers.dir
   OBJECT_FILE_DIR = CMakeFiles\checkers.dir\app
 
-build CMakeFiles/checkers.dir/app/position.cpp.obj: CXX_COMPILER__checkers_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/position.cpp || cmake_object_order_depends_target_checkers
-  DEP_FILE = CMakeFiles\checkers.dir\app\position.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
-  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/."
-  OBJECT_DIR = CMakeFiles\checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles\checkers.dir\app
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target checkers
@@ -85,7 +78,7 @@ build CMakeFiles/checkers.dir/app/position.cpp.obj: CXX_COMPILER__checkers_unsca
 #############################################
 # Link the executable checkers.exe
 
-build checkers.exe: CXX_EXECUTABLE_LINKER__checkers_Debug CMakeFiles/checkers.dir/app/main.cpp.obj CMakeFiles/checkers.dir/app/piece.cpp.obj CMakeFiles/checkers.dir/app/position_validator.cpp.obj CMakeFiles/checkers.dir/app/position.cpp.obj
+build checkers.exe: CXX_EXECUTABLE_LINKER__checkers_Debug CMakeFiles/checkers.dir/app/main.cpp.obj CMakeFiles/checkers.dir/app/piece.cpp.obj CMakeFiles/checkers.dir/app/position_validator.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\checkers.dir
@@ -820,6 +813,13 @@ build tests/CMakeFiles/checkers_test.dir/__/app/piece.cpp.obj: CXX_COMPILER__che
   OBJECT_DIR = tests\CMakeFiles\checkers_test.dir
   OBJECT_FILE_DIR = tests\CMakeFiles\checkers_test.dir\__\app
 
+build tests/CMakeFiles/checkers_test.dir/__/app/position_validator.cpp.obj: CXX_COMPILER__checkers_test_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/position_validator.cpp || cmake_object_order_depends_target_checkers_test
+  DEP_FILE = tests\CMakeFiles\checkers_test.dir\__\app\position_validator.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app"
+  OBJECT_DIR = tests\CMakeFiles\checkers_test.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_test.dir\__\app
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target checkers_test
@@ -828,7 +828,7 @@ build tests/CMakeFiles/checkers_test.dir/__/app/piece.cpp.obj: CXX_COMPILER__che
 #############################################
 # Link the executable tests\checkers_test.exe
 
-build tests/checkers_test.exe: CXX_EXECUTABLE_LINKER__checkers_test_Debug tests/CMakeFiles/checkers_test.dir/__/app/board.cpp.obj tests/CMakeFiles/checkers_test.dir/__/app/piece.cpp.obj | tests/libcheckers_lib.a tests/libcheckers_lib.a || tests/libcheckers_lib.a
+build tests/checkers_test.exe: CXX_EXECUTABLE_LINKER__checkers_test_Debug tests/CMakeFiles/checkers_test.dir/__/app/board.cpp.obj tests/CMakeFiles/checkers_test.dir/__/app/piece.cpp.obj tests/CMakeFiles/checkers_test.dir/__/app/position_validator.cpp.obj | tests/libcheckers_lib.a tests/libcheckers_lib.a || tests/libcheckers_lib.a
   FLAGS = -g
   LINK_LIBRARIES = tests/libcheckers_lib.a  tests/libcheckers_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = tests\CMakeFiles\checkers_test.dir
@@ -861,6 +861,13 @@ build tests/CMakeFiles/checkers_lib.dir/__/app/piece.cpp.obj: CXX_COMPILER__chec
   OBJECT_DIR = tests\CMakeFiles\checkers_lib.dir
   OBJECT_FILE_DIR = tests\CMakeFiles\checkers_lib.dir\__\app
 
+build tests/CMakeFiles/checkers_lib.dir/__/app/position_validator.cpp.obj: CXX_COMPILER__checkers_lib_unscanned_Debug C$:/Users/Gabriel$ Ortega/CLionProjects/checkers/app/position_validator.cpp || cmake_object_order_depends_target_checkers_lib
+  DEP_FILE = tests\CMakeFiles\checkers_lib.dir\__\app\position_validator.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Werror -pedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/PUBLIC" -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/." -I"C:/Users/Gabriel Ortega/CLionProjects/checkers/tests/app"
+  OBJECT_DIR = tests\CMakeFiles\checkers_lib.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\checkers_lib.dir\__\app
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target checkers_lib
@@ -869,7 +876,7 @@ build tests/CMakeFiles/checkers_lib.dir/__/app/piece.cpp.obj: CXX_COMPILER__chec
 #############################################
 # Link the static library tests\libcheckers_lib.a
 
-build tests/libcheckers_lib.a: CXX_STATIC_LIBRARY_LINKER__checkers_lib_Debug tests/CMakeFiles/checkers_lib.dir/__/app/board.cpp.obj tests/CMakeFiles/checkers_lib.dir/__/app/piece.cpp.obj
+build tests/libcheckers_lib.a: CXX_STATIC_LIBRARY_LINKER__checkers_lib_Debug tests/CMakeFiles/checkers_lib.dir/__/app/board.cpp.obj tests/CMakeFiles/checkers_lib.dir/__/app/piece.cpp.obj tests/CMakeFiles/checkers_lib.dir/__/app/position_validator.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = tests\CMakeFiles\checkers_lib.dir
   POST_BUILD = cd .

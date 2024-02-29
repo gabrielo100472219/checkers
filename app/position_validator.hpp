@@ -2,7 +2,6 @@
 #define CHECKERS_POSITION_VALIDATOR_HPP
 
 #include "checkers_commons.hpp"
-#include "position.hpp"
 
 
 class positionValidator {
@@ -14,6 +13,8 @@ private:
 
   [[nodiscard]] bool position_is_out_of_bounds() const;
   [[nodiscard]] bool position_is_white_box() const;
+  [[nodiscard]] bool x_is_odd() const;
+  [[nodiscard]] bool y_is_odd() const;
 };
 
 

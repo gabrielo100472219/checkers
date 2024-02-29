@@ -1,10 +1,11 @@
 add_executable(checkers_test
         ../app/board.cpp
         ../app/piece.cpp
+        ../app/position_validator.cpp
 )
 
 # Crear una librería estática con los archivos comunes
-add_library(checkers_lib STATIC ../app/board.cpp ../app/piece.cpp)
+add_library(checkers_lib STATIC ../app/board.cpp ../app/piece.cpp ../app/position_validator.cpp)
 target_link_libraries(checkers_test PRIVATE checkers_lib)
 
 # Include your unit test source files

@@ -2,7 +2,6 @@
 #define CHECKERS_PIECE_HPP
 
 #include "checkers_commons.hpp"
-#include "position.hpp"
 #include <string>
 #include <vector>
 using namespace std;

@@ -3,7 +3,6 @@
 
 #include "piece.hpp"
 #include "checkers_commons.hpp"
-#include "position.hpp"
 #include <string>
 #include <vector>
 
@@ -20,6 +19,7 @@ class Board {
       this->setup_black_pieces();
     }
 
+    // These are public for testing purposes
     void create_black_piece(Position piece_position);
     void create_white_piece(Position piece_position);
 
